@@ -20,23 +20,7 @@
     console.dir(location)
   });
 
-  onMount(async () => {
-    // await getLocation()
-  })
-
   onDestroy(unsub)
-
-  const getLocation = async () => {
-    if(!$currLoc) return
-    const docRef = doc(db, 'locations', $currLoc)
-    const docSnap = await getDoc(docRef)
-
-    if(docSnap.exists()) {
-      location = docSnap.data()
-    } else {
-      console.error('ERROR loading location')
-    }
-  }
 
   const submitReview = async () => {
     const locRef = doc(db, 'locations', $currLoc)

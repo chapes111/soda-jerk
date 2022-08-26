@@ -3,13 +3,7 @@
 // import { initializeApp } from "firebase/app";
 
 // const firebaseConfig = {
-//   apiKey: "AIzaSyDdoLexzW9F8xu4pgCrTGqrbLFWbB3DRIM",
-//   authDomain: "sodajerk-5039f.firebaseapp.com",
-//   projectId: "sodajerk-5039f",
-//   storageBucket: "sodajerk-5039f.appspot.com",
-//   messagingSenderId: "134105694470",
-//   appId: "1:134105694470:web:39777725462c5591a9de87",
-//   measurementId: "G-5LNDGW1NHG"
+  // todo: put config here
 // };
 
 // export const app = initializeApp(firebaseConfig);
