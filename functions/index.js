@@ -9,7 +9,7 @@ const db = admin.firestore();
 
 // Set up Algolia.
 // The app id and API key are coming from the cloud functions environment, as we set up in Part 1, Step 3.
-const algoliaClient = algoliasearch(functions.config().algolia.appid, functions.config().algolia.apikey);
+const algoliaClient = algoliasearch(functions.config().algolia.appid, functions.config().algolia.key);
 // Since I'm using develop and production environments, I'm automatically defining
 // the index name according to which environment is running. functions.config().projectId is a default
 // property set by Cloud Functions.

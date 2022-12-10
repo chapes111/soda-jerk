@@ -1,9 +1,10 @@
 <script>
   import { goto } from '$app/navigation'
+  import { app } from '../../../routes/fb'
   import { getAuth, signOut } from 'firebase/auth'
   import { isLoggedIn } from '../../../routes/stores/authStore'
 
-  const auth = getAuth()
+  const auth = getAuth(app)
 
 
   const logout = () => {
