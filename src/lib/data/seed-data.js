@@ -2,16 +2,22 @@
 // import { getFirestore, collection, addDoc } from 'firebase/firestore'
 // import { initializeApp } from "firebase/app";
 
-// const API_KEY = process.env.API_KEY
-
+// const API_KEY = import.meta.env.VITE_API_KEY
+// const AUTH_DOMAIN = import.meta.env.VITE_AUTH_DOMAIN
+// const PROJECT_ID = import.meta.env.VITE_PROJECT_ID
+// const STORAGE_BUCKET = import.meta.env.VITE_STORAGE_BUCKET
+// const MESSAGING_SENDER_ID = import.meta.env.VITE_MESSAGING_SENDER_ID
+// const APP_ID = import.meta.env.VITE_APP_ID
+// const MEASUREMENT_ID =  import.meta.env.VITE_MEASUREMENT_ID
+//
 // const firebaseConfig = {
-  // apiKey: API_KEY,
-  // authDomain: "sodajerk-5039f.firebaseapp.com",
-  // projectId: "sodajerk-5039f",
-  // storageBucket: "sodajerk-5039f.appspot.com",
-  // messagingSenderId: "134105694470",
-  // appId: "1:134105694470:web:39777725462c5591a9de87",
-  // measurementId: "G-5LNDGW1NHG"
+//   apiKey: API_KEY,
+//   authDomain: AUTH_DOMAIN,
+//   projectId: PROJECT_ID,
+//   storageBucket: STORAGE_BUCKET,
+//   messagingSenderId: MESSAGING_SENDER_ID,
+//   appId: APP_ID,
+//   measurementId: MEASUREMENT_ID
 // };
 
 // export const app = initializeApp(firebaseConfig);

@@ -1,5 +1,4 @@
 <script>
-  import { db } from './fb'
   import Navbar from "$lib/components/layout/navbar.svelte"
   import { isLoggedIn, userStore } from "./stores/authStore"
   import '$lib/global.css'
@@ -17,6 +16,7 @@
         console.log("Welcome to SodaJerk")
         userStore.update(() => user)
         isLoggedIn.update(() => true)
+        goto("/")
       } else {
         userStore.update(() => undefined)
         isLoggedIn.update(() => false)
@@ -26,5 +26,7 @@
   })
 </script>
 
-<Navbar />
-<slot />
+<div class="site-wrapper w-screen overflow-hidden">
+  <Navbar />
+  <slot />
+</div>
